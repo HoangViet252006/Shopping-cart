@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="checkoutLayout">
+            <div class="returnCart">
+                <a href="/">keep shopping</a>
+                <h1>List Product in Cart</h1>
+                <div class="list">
+                </div>
+            </div>
+
+
+            <div class="right">
+                <h1>Checkout</h1>
+                <div class="form">
+                    <div class="group">
+                        <label class="form-label" for="username">Full Name</label>
+                        <input type="text" name="username" id="username" placeholder="VD: Hoàng Quốc Việt" class="form-control">
+                        <div>
+                            <span class="form-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <label class="form-label" for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="VD: 0987654321" class="form-control">
+                        <div>
+                            <span class="form-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <label class="form-label" for="address">Email</label>
+                        <input type="text" name="email" id="email" placeholder="VD: email@domain.com" class="form-control">
+                        <div>
+                            <span class="form-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="group">
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="">Choose..</option>
+                            <option value="Viet Nam">Viet Nam</option>
+                        </select>
+                        <div>
+                            <span class="form-message"></span>
+                        </div>
+                    </div>
+
+                    <div class="group invalid">
+                        <label for="city">City</label>
+                        <select name="city" id="city">
+                            <option value="">Choose..</option>
+                            <option value="Ha Noi">Ha Noi</option>
+                        </select>
+                        <div>
+                            <span class="form-message"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="return">
+                    <div class="row">
+                        <div>Total Quantity</div>
+                        <div class="totalQuantity">70</div>
+                    </div>
+                    <div class="row">
+                        <div>Total Price</div>
+                        <div class="totalPrice">$900</div>
+                    </div>
+                </div>
+                <button id="btncheck" class="button-checkout">PLACE ORDER</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="pay-content">
+            <div class="pay-icon">
+                <svg fill="#EEEEE6" class="pay-icon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
+                <p class="js-pay-icon-text">
+                    Bạn đã thanh toán 340,000đ
+                </p>
+            </div>
+            <div class="pay-text">
+                HoangViet-store xin chân thành cảm ơn và Chúc quý khách một ngày tốt lành
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./asset/js/checkout.js" type="module"></script>
+</body>
+
+</html>

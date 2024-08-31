@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+</head>
+
+<body class="">
+    <div class="container">
+        <header>
+            <div class="title">
+                <a href="/">Home</a>
+            </div>
+            <div class="header__search">
+                <div class="header__search-input-wrap">
+                    <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phảm">
+                </div>
+                <button class="header__search-btn">
+                    <svg class="header__search-btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </button>
+            </div>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span>0</span>
+            </div>
+        </header>
+        <div id="contentTab">
+        </div>
+    </div>
+
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkout">
+                <a href="checkout.html">CHECKOUT</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-title">Do you want to remove this item?</div>
+            <div class="modal-itemName">Bàn phím giả cơ chơi game Dareu LK145 LED RGB rât đẹp hàng cũ dùng tốt, _Bàn gaming LK145 (LK145 Có chân nâng) yes
+            </div>
+            <div class="modal-btns">
+                <button class="btn-modal btn-yes">Yes</button>
+                <button class="btn-modal btn-no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./asset/js/cart.js" type="module"></script>
+</body>
+
+</html>
